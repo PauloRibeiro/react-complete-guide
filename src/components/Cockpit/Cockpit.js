@@ -27,8 +27,16 @@ const cockpit = (props) => {
             >
                 Toogle Persons
             </button>
+
+            <button
+                className={ btnClass }
+                onClick={ props.login }
+            >
+                Log in
+            </button>
+
         </Aux>
     );
 }
 
-export default cockpit;
+export default React.memo(cockpit);
